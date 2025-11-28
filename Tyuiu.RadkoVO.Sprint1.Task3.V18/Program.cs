@@ -1,6 +1,6 @@
 ﻿using Tyuiu.RadkoVO.Sprint1.Task3.V18.Lib;
 
-namespace Tyuiu.RadkoVO.Sprint1.Task1.V7
+namespace Tyuiu.RadkoVO.Sprint1.Task3.V18
 {
     class Program
     {

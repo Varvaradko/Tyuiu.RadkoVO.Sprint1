@@ -1,27 +1,30 @@
-﻿using Tyuiu.RadkoVO.Sprint1.Task2.V23.Lib;
+﻿using Tyuiu.RadkoVO.Sprint1.Task4.V15.Lib;
 
-namespace Tyuiu.RadkoVO.Sprint1.Task2.V23
+namespace Tyuiu.RadkoVO.Sprint1.Task4.V15
 {
     class Program
     {
         static void Main(string[] args)
         {
+
             DataService ds = new DataService();
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            int x;
+            int x, y;
 
-            Console.WriteLine("Введите значение X:");
+            Console.WriteLine("Введите знвчение X:");
             x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите знвчение Y:");
+            y = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                               ");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("X минут, переведенные в секунды =" + ds.ConvertMinutesToSeconds(x));
+            Console.WriteLine("(x + y ^ 2) / (e ^ (2 - 4 * y)) = " + ds.Calculate(x, y));
 
             Console.ReadLine();
         }
