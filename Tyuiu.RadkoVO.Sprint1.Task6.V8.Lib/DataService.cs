@@ -6,8 +6,15 @@ namespace Tyuiu.RadkoVO.Sprint1.Task6.V8.Lib
     {
         public string MoveLetterToEnd(string value)
         {
-            value = string.Join("", value.Skip(1)) + value[0];
-            return value;
+            string[] words = value.Split(' ');
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i].Length > 0)
+                {
+                    words[i] = words[i].Substring(1) + words[i][0];
+                }
+            }
+            return string.Join(" ", words);
         }
     }
 }
